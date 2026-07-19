@@ -1,0 +1,10 @@
+{
+  "description": "Discover and explore cafes and hangout spots with an interactive map, personalized filters, and detailed listings, perfect for coffee lovers and social seekers.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

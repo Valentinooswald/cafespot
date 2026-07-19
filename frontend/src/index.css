@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://static.figma.com/font/Poppins-Regular_6') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('https://static.figma.com/font/Poppins-Medium_6') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('https://static.figma.com/font/Poppins-SemiBold_6') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://static.figma.com/font/Poppins-Bold_6') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://static.figma.com/font/Poppins-Italic_4') format('woff2');
+}
+
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Poppins', system-ui, sans-serif;
+
+  --color-brown: #6F4E37;
+  --color-brown-light: #8B6347;
+  --color-brown-dark: #543A28;
+  --color-cream: #F8F4E9;
+  --color-cream-dark: #EDE8D8;
+  --color-caramel: #C4843A;
+  --color-caramel-light: #D4994F;
+
+  --radius-card: 12px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #C4843A transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #C4843A;
+  border-radius: 4px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', system-ui, sans-serif;
+  background-color: #F8F4E9;
+  color: #1a1a1a;
+}
+
+/* Leaflet map overrides */
+.leaflet-container {
+  font-family: 'Poppins', system-ui, sans-serif;
+  border-radius: 12px;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(111,78,55,0.18);
+}
+
+.leaflet-popup-tip {
+  background: white;
+}
+
+/* Custom marker */
+.cafe-marker-icon {
+  background: #6F4E37;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.cafe-marker-icon.active {
+  background: #C4843A;
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.2s ease;
+}
+
+/* Hide scrollbar while scrolling helper */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
